@@ -217,6 +217,24 @@ st.markdown("""
     [data-testid="stFileUploader"]:hover {
         border-color: #E8FF00 !important;
     }
+    [data-testid="stFileUploaderDropzone"] {
+        padding: 1rem !important;
+    }
+    [data-testid="stFileUploaderDropzoneInstructions"] {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        flex-wrap: wrap !important;
+    }
+    [data-testid="stFileUploaderDropzoneInstructions"] > div {
+        margin: 0 !important;
+    }
+    [data-testid="stFileUploaderDropzone"] section {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 12px !important;
+    }
 
     /* ── Detection badges ── */
     .detection-badge {
