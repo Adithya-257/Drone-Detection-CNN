@@ -1,4 +1,4 @@
-ultralytics==8.3.0
+ultralytics==8.3.106
 opencv-python-headless==4.9.0.80
 streamlit==1.41.0
 pillow==10.3.0
