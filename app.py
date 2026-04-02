@@ -193,24 +193,24 @@ st.markdown("""
 
 #CHANGED HERE
 
-/* ── Fix sidebar layout overflow (REAL FIX) ── */
-[data-testid="stSidebar"] > div {
-    width: 100% !important;
-}
+# /* ── Fix sidebar layout overflow (REAL FIX) ── */
+# [data-testid="stSidebar"] > div {
+#     width: 100% !important;
+# }
 
-/* Fix slider container width */
-[data-testid="stSlider"] {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow: hidden !important;
-}
+# /* Fix slider container width */
+# [data-testid="stSlider"] {
+#     width: 100% !important;
+#     max-width: 100% !important;
+#     overflow: hidden !important;
+# }
 
-/* Prevent internal overflow */
-[data-testid="stSlider"] [data-baseweb="slider"] {
-    width: 100% !important;
-    max-width: 100% !important;
-}
-#END
+# /* Prevent internal overflow */
+# [data-testid="stSlider"] [data-baseweb="slider"] {
+#     width: 100% !important;
+#     max-width: 100% !important;
+# }
+# #END
 
     .stButton > button {
         background: #111 !important;
