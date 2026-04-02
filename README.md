@@ -22,11 +22,15 @@ Demo Examples
 
 ## Features
 
--Image upload — upload any aerial image and get bounding box detections with confidence scores
--Video processing — upload or use the preloaded Bird vs Drone real-world footage; model processes every frame and returns an annotated preview + downloadable MP4
--Demo examples — 9 preloaded images covering drones, birds, planes and multi-class scenes
--Adjustable confidence threshold — tune the detection sensitivity via a sidebar slider
--4-class detection — drone, bird, plane, kite with colour-coded bounding boxes
+- Image upload — upload any aerial image and get bounding box detections with confidence scores
+
+- Video processing — upload or use the preloaded Bird vs Drone real-world footage; model processes every frame and returns an annotated preview + downloadable MP4
+ 
+- Demo examples — 9 preloaded images covering drones, birds, planes and multi-class scenes
+  
+- Adjustable confidence threshold — tune the detection sensitivity via a sidebar slider
+  
+- 4-class detection — drone, bird, plane, kite with colour-coded bounding boxes
 
 
 
