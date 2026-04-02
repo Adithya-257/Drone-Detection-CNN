@@ -174,8 +174,11 @@ st.markdown("""
 }
 
 /* ── Slider thumb glow ── */
-[data-testid="stSlider"] [role="slider"] {
-    box-shadow: 0 0 8px 3px rgba(232, 255, 0, 0.6) !important;
+[data-testid="stSlider"] input[type="range"]::-webkit-slider-thumb {
+    box-shadow: 0 0 8px 4px rgba(232, 255, 0, 0.6) !important;
+}
+[data-testid="stSlider"] input[type="range"]::-moz-range-thumb {
+    box-shadow: 0 0 8px 4px rgba(232, 255, 0, 0.6) !important;
 }
 
    #  /* ── Slider track ── */
