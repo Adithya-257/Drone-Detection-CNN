@@ -162,23 +162,30 @@ st.markdown("""
         font-weight: 700 !important;
     }
 
-    /* ── Slider fix ── */
-[data-testid="stSlider"] [data-baseweb="slider"] {
+   /* ── Fix slider container overflow ── */
+[data-testid="stSlider"] {
     padding-right: 0 !important;
-    margin-right: 0 !important;
-    
-}
-[data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
-    width: 100% !important;
-    right: 0 !important;
 }
 
-/* ── Slider thumb glow ── */
-[data-testid="stSlider"] input[type="range"]::-webkit-slider-thumb {
-    box-shadow: 0 0 8px 4px rgba(232, 255, 0, 0.6) !important;
+[data-testid="stSlider"] [data-baseweb="slider"] {
+    margin-right: 0 !important;
 }
-[data-testid="stSlider"] input[type="range"]::-moz-range-thumb {
-    box-shadow: 0 0 8px 4px rgba(232, 255, 0, 0.6) !important;
+
+/* ── Fix track alignment ── */
+[data-testid="stSlider"] [data-baseweb="slider"] > div {
+    width: 100% !important;
+}
+
+/* ── Slider THUMB (this is the important fix) ── */
+[data-testid="stSlider"] [role="slider"] {
+    background-color: #E8FF00 !important;
+    box-shadow: 0 0 10px 4px rgba(232, 255, 0, 0.6) !important;
+    border: none !important;
+}
+
+/* ── Slider TRACK (optional glow line) ── */
+[data-testid="stSlider"] [data-baseweb="slider"] > div > div {
+    background: #E8FF00 !important;
 }
 
    #  /* ── Slider track ── */
