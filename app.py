@@ -166,10 +166,16 @@ st.markdown("""
 [data-testid="stSlider"] [data-baseweb="slider"] {
     padding-right: 0 !important;
     margin-right: 0 !important;
+    
 }
 [data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
     width: 100% !important;
     right: 0 !important;
+}
+
+/* ── Slider thumb glow ── */
+[data-testid="stSlider"] [role="slider"] {
+    box-shadow: 0 0 8px 3px rgba(232, 255, 0, 0.6) !important;
 }
 
    #  /* ── Slider track ── */
