@@ -162,23 +162,40 @@ st.markdown("""
         font-weight: 700 !important;
     }
 
-/* ── Slider fix ── */
-[data-testid="stSlider"] [data-baseweb="slider"] {
-    padding-right: 0 !important;
-    margin-right: 0 !important;
-}
-[data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
-    width: 100% !important;
-    right: 0 !important;
+/* ── Fix slider overflow (ONLY this, nothing aggressive) ── */
+[data-testid="stSlider"] {
+    padding-right: 8px !important;
 }
 
-/* ── Slider thumb glow ── */
-[data-testid="stSlider"] input[type="range"]::-webkit-slider-thumb {
-    box-shadow: 0 0 8px 4px rgba(232, 255, 0, 0.6) !important;
+/* ── Fix thumb (correct target) ── */
+[data-testid="stSlider"] [role="slider"] {
+    background-color: #E8FF00 !important;
+    box-shadow: 0 0 8px 3px rgba(232, 255, 0, 0.6) !important;
+    border: none !important;
 }
-[data-testid="stSlider"] input[type="range"]::-moz-range-thumb {
-    box-shadow: 0 0 8px 4px rgba(232, 255, 0, 0.6) !important;
+
+/* ── Fix track color WITHOUT breaking layout ── */
+[data-testid="stSlider"] [data-baseweb="slider"] > div > div:first-child {
+    background: #E8FF00 !important;
 }
+#RESTORE FROM HERE
+# /* ── Slider fix ── */
+# [data-testid="stSlider"] [data-baseweb="slider"] {
+#     padding-right: 0 !important;
+#     margin-right: 0 !important;
+# }
+# [data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
+#     width: 100% !important;
+#     right: 0 !important;
+# }
+
+# /* ── Slider thumb glow ── */
+# [data-testid="stSlider"] input[type="range"]::-webkit-slider-thumb {
+#     box-shadow: 0 0 8px 4px rgba(232, 255, 0, 0.6) !important;
+# }
+# [data-testid="stSlider"] input[type="range"]::-moz-range-thumb {
+#     box-shadow: 0 0 8px 4px rgba(232, 255, 0, 0.6) !important;
+# }
 
    #  /* ── Slider track ── */
    # [data-testid="stSlider"] > div > div > div > div {
