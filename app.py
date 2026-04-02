@@ -163,21 +163,21 @@ st.markdown("""
     }
 
     /* ── Slider track ── */
-    [data-testid="stSlider"] > div > div > div > div {
-        background: #E8FF00 !important;
-    }
-    [data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
-        background: #E8FF00 !important;
-    }
+   [data-testid="stSlider"] > div > div > div > div {
+    background: #E8FF00 !important;
+        }
+        [data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
+    background: #E8FF00 !important;
+        }
     [data-testid="stSlider"] [role="progressbar"] {
-        background: #E8FF00 !important;
+    background: #E8FF00 !important;
     }
-<<<<<<< HEAD
-=======
     [data-testid="stSlider"] div[style*="background"] {
-        background-color: #E8FF00 !important;
+    background-color: #E8FF00 !important;
     }
->>>>>>> 60d5a9159bad057d9e6362aaecb09109d2ff0a50
+    [class*="sliderTrack"] {
+    background: #E8FF00 !important;
+    }
     /* ── Slider thumb → yellow ── */
     [data-testid="stSlider"] input[type="range"]::-webkit-slider-thumb {
         background: #E8FF00 !important;
