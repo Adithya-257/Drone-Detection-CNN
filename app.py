@@ -96,8 +96,8 @@ st.markdown("""
 
     /* ── Sidebar ── */
     [data-testid="stSidebar"] {
-        min-width: 300px !important;
-        max-width: 300px !important;
+        min-width: 320px !important;
+        max-width: 320px !important;
         border-right: 1px solid #1a1a1a !important;
         overflow-x: hidden !important;
         overflow-y: hidden !important;
@@ -113,7 +113,7 @@ st.markdown("""
         padding-top: 0 !important;
     }
     section[data-testid="stSidebar"] > div:first-child {
-        width: 300px !important;
+        width: 320px !important;
     }
     section[data-testid="stSidebar"] {
         overflow: hidden !important;
@@ -143,24 +143,33 @@ st.markdown("""
         background: #111 !important;
         border: 1px solid #1e1e1e !important;
         border-radius: 10px !important;
-        min-width: 80px !important;
-        padding: 12px 16px !important;
+        min-width: 96px !important;
+        padding: 10px 12px !important;
     }
     [data-testid="stMetricLabel"] {
         font-family: 'Space Grotesk', sans-serif !important;
         color: #555 !important;
-        font-size: 0.65rem !important;
+        font-size: 0.7rem !important;
         text-transform: uppercase;
         letter-spacing: 1px;
+        white-space: normal !important;
+        overflow: visible !important;
+        text-overflow: clip !important;
     }
     [data-testid="stMetricValue"] {
         color: #ffffff !important;
-        font-size: 1.3rem !important;
+        font-size: 1.45rem !important;
         font-weight: 700 !important;
     }
 
     /* ── Slider track ── */
     [data-testid="stSlider"] > div > div > div > div {
+        background: #E8FF00 !important;
+    }
+    [data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
+        background: #E8FF00 !important;
+    }
+    [data-testid="stSlider"] [role="progressbar"] {
         background: #E8FF00 !important;
     }
     /* ── Slider thumb → yellow ── */
