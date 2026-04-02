@@ -4,4 +4,4 @@ A real-time aerial object detection system fine-tuned on YOLOv8s, trained on a m
 
 ## 🚀 Live Demo
 
-[![🚁 Try the Live App](https://img.shields.io/badge/🚀%20Launch%20App-Drone%20Detection-E8FF00?style=for-the-badge&logo=streamlit&logoColor=black)](https://drone-detection-cnn.streamlit.app)
+https://drone-detection-cnn.streamlit.app
