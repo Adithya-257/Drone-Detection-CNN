@@ -174,6 +174,7 @@ st.markdown("""
     background: #E8FF00 !important;
     height: 3px !important;
     border-radius: 999px !important;
+    overflow: hidden !important;
 }
 
 /* Slider thumb */
