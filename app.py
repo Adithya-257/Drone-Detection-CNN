@@ -162,6 +162,16 @@ st.markdown("""
         font-weight: 700 !important;
     }
 
+    /* ── Slider fix ── */
+[data-testid="stSlider"] [data-baseweb="slider"] {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+}
+[data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
+    width: 100% !important;
+    right: 0 !important;
+}
+
    #  /* ── Slider track ── */
    # [data-testid="stSlider"] > div > div > div > div {
    #  background: #E8FF00 !important;
