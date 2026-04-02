@@ -163,6 +163,15 @@ st.markdown("""
     [data-testid="stSlider"] > div > div > div > div {
         background: #E8FF00 !important;
     }
+    [data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
+        background: #E8FF00 !important;
+    }
+    [data-testid="stSlider"] [role="progressbar"] {
+        background: #E8FF00 !important;
+    }
+    [data-testid="stSlider"] div[style*="background"] {
+        background-color: #E8FF00 !important;
+    }
     /* ── Slider thumb → yellow ── */
     [data-testid="stSlider"] input[type="range"]::-webkit-slider-thumb {
         background: #E8FF00 !important;
