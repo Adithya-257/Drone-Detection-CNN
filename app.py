@@ -162,42 +162,42 @@ st.markdown("""
         font-weight: 700 !important;
     }
 
-    /* ── Slider track ── */
-   [data-testid="stSlider"] > div > div > div > div {
-    background: #E8FF00 !important;
-        }
-        [data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
-    background: #E8FF00 !important;
-        }
-    [data-testid="stSlider"] [role="progressbar"] {
-    background: #E8FF00 !important;
-    }
-    [data-testid="stSlider"] div[style*="background"] {
-    background-color: #E8FF00 !important;
-    }
-    [class*="sliderTrack"] {
-    background: #E8FF00 !important;
-    }
-    /* ── Slider thumb → yellow ── */
-    [data-testid="stSlider"] input[type="range"]::-webkit-slider-thumb {
-        background: #E8FF00 !important;
-        border: 2px solid #000 !important;
-    }
-    [data-testid="stSlider"] input[type="range"]::-moz-range-thumb {
-        background: #E8FF00 !important;
-        border: 2px solid #000 !important;
-    }
-    [data-testid="stSlider"] [role="slider"] {
-        background: #E8FF00 !important;
-        background-color: #E8FF00 !important;
-        border: 2px solid #E8FF00 !important;
-        border-color: #E8FF00 !important;
-        box-shadow: 0 0 0 4px rgba(232, 255, 0, 0.22) !important;
-    }
-    div[data-testid="stSlider"] [role="slider"] {
-        background-color: #E8FF00 !important;
-        border-color: #E8FF00 !important;
-    }
+   #  /* ── Slider track ── */
+   # [data-testid="stSlider"] > div > div > div > div {
+   #  background: #E8FF00 !important;
+   #      }
+   #      [data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
+   #  background: #E8FF00 !important;
+   #      }
+   #  [data-testid="stSlider"] [role="progressbar"] {
+   #  background: #E8FF00 !important;
+   #  }
+   #  [data-testid="stSlider"] div[style*="background"] {
+   #  background-color: #E8FF00 !important;
+   #  }
+   #  [class*="sliderTrack"] {
+   #  background: #E8FF00 !important;
+   #  }
+   #  /* ── Slider thumb → yellow ── */
+   #  [data-testid="stSlider"] input[type="range"]::-webkit-slider-thumb {
+   #      background: #E8FF00 !important;
+   #      border: 2px solid #000 !important;
+   #  }
+   #  [data-testid="stSlider"] input[type="range"]::-moz-range-thumb {
+   #      background: #E8FF00 !important;
+   #      border: 2px solid #000 !important;
+   #  }
+   #  [data-testid="stSlider"] [role="slider"] {
+   #      background: #E8FF00 !important;
+   #      background-color: #E8FF00 !important;
+   #      border: 2px solid #E8FF00 !important;
+   #      border-color: #E8FF00 !important;
+   #      box-shadow: 0 0 0 4px rgba(232, 255, 0, 0.22) !important;
+   #  }
+   #  div[data-testid="stSlider"] [role="slider"] {
+   #      background-color: #E8FF00 !important;
+   #      border-color: #E8FF00 !important;
+   #  }
 
     /* ── Buttons — default ── */
     /* Final slider override for deploy: thin yellow line + round thumb only */
