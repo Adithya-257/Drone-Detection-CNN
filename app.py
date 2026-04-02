@@ -25,6 +25,9 @@ st.markdown("""
         background-color: #0a0a0a !important;
         color: #ffffff !important;
     }
+    [data-testid="stAppViewContainer"] {
+        zoom: 0.9;
+    }
 
     html, body, * {
         font-family: 'Inter', sans-serif !important;
@@ -32,6 +35,9 @@ st.markdown("""
 
     /* ── Hide Streamlit branding ── */
     #MainMenu, footer { visibility: hidden; }
+    [data-testid="stDecoration"] {
+        display: none !important;
+    }
     header {
         visibility: visible !important;
         background: transparent !important;
@@ -137,18 +143,19 @@ st.markdown("""
         background: #111 !important;
         border: 1px solid #1e1e1e !important;
         border-radius: 10px !important;
+        min-width: 80px !important;
         padding: 12px 16px !important;
     }
     [data-testid="stMetricLabel"] {
         font-family: 'Space Grotesk', sans-serif !important;
         color: #555 !important;
-        font-size: 0.75rem !important;
+        font-size: 0.65rem !important;
         text-transform: uppercase;
         letter-spacing: 1px;
     }
     [data-testid="stMetricValue"] {
         color: #ffffff !important;
-        font-size: 1.6rem !important;
+        font-size: 1.3rem !important;
         font-weight: 700 !important;
     }
 
@@ -167,8 +174,14 @@ st.markdown("""
     }
     [data-testid="stSlider"] [role="slider"] {
         background: #E8FF00 !important;
+        background-color: #E8FF00 !important;
         border: 2px solid #E8FF00 !important;
+        border-color: #E8FF00 !important;
         box-shadow: 0 0 0 4px rgba(232, 255, 0, 0.22) !important;
+    }
+    div[data-testid="stSlider"] [role="slider"] {
+        background-color: #E8FF00 !important;
+        border-color: #E8FF00 !important;
     }
 
     /* ── Buttons — default ── */
