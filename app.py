@@ -25,9 +25,9 @@ st.markdown("""
         background-color: #0a0a0a !important;
         color: #ffffff !important;
     }
-    [data-testid="stAppViewContainer"] {
-        zoom: 0.9;
-    }
+    # [data-testid="stAppViewContainer"] {
+    #     zoom: 0.9;
+    # }
 
     html, body, * {
         font-family: 'Inter', sans-serif !important;
