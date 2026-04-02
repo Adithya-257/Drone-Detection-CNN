@@ -200,17 +200,10 @@ st.markdown("""
     }
 
     /* ── Buttons — default ── */
-    /* Final slider override for deploy: gray base line + yellow active line + centered thumb */
-    [data-testid="stSlider"] [data-baseweb="slider"] {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-    }
+    /* Final slider override for deploy: thin yellow line + round thumb only */
     [data-testid="stSlider"] > div > div > div > div,
     [data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
-        height: 2px !important;
-        background: #363944 !important;
-        border-radius: 999px !important;
-        overflow: visible !important;
+        background: transparent !important;
     }
     [data-testid="stSlider"] [role="progressbar"] {
         height: 2px !important;
@@ -226,9 +219,7 @@ st.markdown("""
         border: 2px solid #E8FF00 !important;
         border-color: #E8FF00 !important;
         border-radius: 50% !important;
-        box-shadow: 0 0 0 4px rgba(232, 255, 0, 0.22) !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
+        box-shadow: none !important;
     }
 
     .stButton > button {
