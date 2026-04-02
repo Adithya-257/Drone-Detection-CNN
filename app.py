@@ -162,26 +162,22 @@ st.markdown("""
         font-weight: 700 !important;
     }
 
-   /* ── Slider track ── */
-:root {
-    --primary-color: #E8FF00 !important;
-}
-[data-testid="stSlider"] * {
-    --slider-track-color: #E8FF00 !important;
-}
-[data-testid="stSlider"] > div > div > div > div {
+    /* ── Slider track ── */
+   [data-testid="stSlider"] > div > div > div > div {
     background: #E8FF00 !important;
-}
-[data-testid="stSlider"] [data-baseweb="slider"] > div {
+        }
+        [data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
     background: #E8FF00 !important;
-}
-[data-testid="stSlider"] [role="progressbar"] {
+        }
+    [data-testid="stSlider"] [role="progressbar"] {
     background: #E8FF00 !important;
-}
-[data-testid="stSlider"] [data-testid="stTickBarMin"],
-[data-testid="stSlider"] [data-testid="stTickBarMax"] {
-    color: #666 !important;
-}
+    }
+    [data-testid="stSlider"] div[style*="background"] {
+    background-color: #E8FF00 !important;
+    }
+    [class*="sliderTrack"] {
+    background: #E8FF00 !important;
+    }
     /* ── Slider thumb → yellow ── */
     [data-testid="stSlider"] input[type="range"]::-webkit-slider-thumb {
         background: #E8FF00 !important;
@@ -204,6 +200,28 @@ st.markdown("""
     }
 
     /* ── Buttons — default ── */
+    /* Final slider override for deploy: thin yellow line + round thumb only */
+    [data-testid="stSlider"] > div > div > div > div,
+    [data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
+        background: transparent !important;
+    }
+    [data-testid="stSlider"] [role="progressbar"] {
+        height: 2px !important;
+        background: #E8FF00 !important;
+        border-radius: 999px !important;
+    }
+    [data-testid="stSlider"] [role="slider"],
+    div[data-testid="stSlider"] [role="slider"] {
+        width: 14px !important;
+        height: 14px !important;
+        background: #E8FF00 !important;
+        background-color: #E8FF00 !important;
+        border: 2px solid #E8FF00 !important;
+        border-color: #E8FF00 !important;
+        border-radius: 50% !important;
+        box-shadow: none !important;
+    }
+
     .stButton > button {
         background: #111 !important;
         color: #ffffff !important;
