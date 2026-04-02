@@ -24,10 +24,10 @@ st.markdown("""
     [data-testid="stSidebar"], .main, section[data-testid="stSidebar"] > div {
         background-color: #0a0a0a !important;
         color: #ffffff !important;
-    }
-    [data-testid="stAppViewContainer"] {
-        zoom: 0.9;
-    }
+    # }
+    # [data-testid="stAppViewContainer"] {
+    #     zoom: 0.9;
+    # }
 
     html, body, * {
         font-family: 'Inter', sans-serif !important;
