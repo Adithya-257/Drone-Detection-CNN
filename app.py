@@ -172,6 +172,12 @@ st.markdown("""
     [data-testid="stSlider"] [role="progressbar"] {
         background: #E8FF00 !important;
     }
+<<<<<<< HEAD
+=======
+    [data-testid="stSlider"] div[style*="background"] {
+        background-color: #E8FF00 !important;
+    }
+>>>>>>> 60d5a9159bad057d9e6362aaecb09109d2ff0a50
     /* ── Slider thumb → yellow ── */
     [data-testid="stSlider"] input[type="range"]::-webkit-slider-thumb {
         background: #E8FF00 !important;
