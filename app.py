@@ -175,6 +175,8 @@ st.markdown("""
     height: 3px !important;
     border-radius: 999px !important;
     overflow: hidden !important;
+    right: 0px;
+    margin-right: 0px !important;
 }
 
 /* Slider thumb */
