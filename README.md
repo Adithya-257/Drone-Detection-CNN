@@ -46,3 +46,24 @@ Demo Examples
 | **Recall**         | 0.762     | **0.802** |
 | Inference Speed    | **~2ms**  | ~3ms      |
 | Model Size         | **6.2MB** | 22.5MB    |
+
+YOLOv8s was selected for deployment due to higher overall mAP50 and significantly better precision. YOLOv8n remains the better choice for edge deployment scenarios where speed and model size are constrained.
+
+## TRAINING CURVES
+
+<table>
+  <tr>
+    <td align="center"><b>YOLOv8n ⚡</b></td>
+    <td align="center"><b>YOLOv8s 🚀</b></td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/a7ae6fc8-a4d9-4064-ad1e-777ff1a44ae4" width="100%">
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/6bb606fc-4ad5-4fe7-ad62-cc6bf5a23ceb" width="100%">
+    </td>
+  </tr>
+</table>
+
+
