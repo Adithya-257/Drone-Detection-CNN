@@ -33,4 +33,16 @@ Demo Examples
 - 4-class detection — drone, bird, plane, kite with colour-coded bounding boxes
 
 
+## Model Comparison
 
+| Metric             | YOLOv8n  | YOLOv8s  |
+|:-------------------|:---------:|:---------:|
+| **mAP@50 (overall)** | 0.764     | **0.820** |
+| mAP@50 (drone)     | **0.875** | 0.873     |
+| mAP@50 (bird)      | 0.711     | **0.713** |
+| mAP@50 (plane)     | 0.914     | **0.932** |
+| mAP@50 (kite)      | 0.559     | **0.761** |
+| **Precision**      | 0.552     | **0.742** |
+| **Recall**         | 0.762     | **0.802** |
+| Inference Speed    | **~2ms**  | ~3ms      |
+| Model Size         | **6.2MB** | 22.5MB    |
