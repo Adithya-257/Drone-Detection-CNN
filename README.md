@@ -132,4 +132,46 @@ Batch size: 8
 Device:     NVIDIA RTX 3050 (4GB VRAM)
 Framework:  Ultralytics
 ```
+## Tech Stack
+
+| Layer            | Technology              |
+|:-----------------|:-----------------------|
+| **Model**        | YOLOv8s (Ultralytics)  |
+| **Inference**    | PyTorch + CUDA         |
+| **Processing**   | OpenCV                 |
+| **Frontend**     | Streamlit              |
+| **Deployment**   | Streamlit Cloud        |
+
+## Project Structure
+
+```
+Drone-Detection-CNN/
+├── app.py                  # Streamlit app
+├── models/
+│   └── best.pt             # Trained YOLOv8s weights
+├── demo_images/            # Preloaded example images
+├── demo_videos/            # Bird vs Drone demo footage
+├── screenshots/            # App screenshots
+├── results/
+│   ├── yolov8n/            # YOLOv8n training outputs
+│   └── yolov8s/            # YOLOv8s training outputs
+├── requirements.txt
+├── packages.txt
+└── README.md
+```
+
+## Run Locally
+```
+git clone https://github.com/Adithya-257/Drone-Detection-CNN.git
+cd Drone-Detection-CNN
+pip install -r requirements.txt
+streamlit run app.py
+```
+## Results
+
+The model achieves **0.873 mAP50 on the drone class with 0.96 recall** , meaning it detects 96% of all drones in the validation set. ** Inference runs at ~3ms per image** on GPU, making real-time deployment viable.
+The 4-class training scheme (including birds, planes and kites as distinct classes) directly addresses the false positive problem common in single-class drone detectors.
+
+## License
+MIT 
 
